@@ -1,0 +1,83 @@
+#dark {
+    display: none;
+}
+
+.container .mode-group .light {
+    display: none;
+}
+
+:root:has(#dark:checked) .container .mode-group .light {
+    display:block;
+    color: #fff;
+}
+:root:has(#dark:checked) .container .mode-group .dark {
+    display: none;
+}
+
+:root:has(#dark:checked) body {
+    background-color: #202020;
+    color: #fff;
+}
+
+:root:has(#dark:checked) body .e-bg{
+    background-color: #252525;
+  }
+:root:has(#dark:checked) body nav,:root:has(#dark:checked) nav .nav-links{
+    background-color: #171717;
+  }
+
+  :root:has(#dark:checked)  nav .container .logo span,
+  :root:has(#dark:checked) footer .about .logo span, 
+  :root:has(#dark:checked) footer .contact ul li i
+  {
+    color: #c17e1f;
+  }
+  :root:has(#dark:checked) nav .nav-links li a:hover {
+    border-color: #c17e1f;
+  }
+  :root:has(#dark:checked) .contact .contact-details>div{
+    background-color: #000;
+  }
+
+  :root:has(#dark:checked) .contact form input:focus, :root:has(#dark:checked) .contact form textarea:focus {
+    border-color: #c17e1f;
+  }
+
+  :root:has(#dark:checked) .links-group .book-a-table ,
+   :root:has(#dark:checked) .contact .contact-details .icon ,
+   :root:has(#dark:checked) .contact form button[type="submit"],
+   :root:has(#dark:checked) footer .sub-box .sub-group button
+   {
+    color: #000;
+    background-color: #c17e1f;
+   }
+
+   :root:has(#dark:checked) .links-group .icon {
+    color: #fff;
+    background-color: #c17e1f;
+   }
+   :root:has(#dark:checked) .links-group .icon::before {
+    background-color: #000;
+   }
+   :root:has(#dark:checked) .header-content .video-btn {
+    color: #fff;
+   }
+   :root:has(#dark:checked) .title h2 span {
+    color: #c17e1f;
+   }
+   :root:has(#dark:checked) nav .nav-links li a:hover  {
+    color: #fff;
+   }
+   :root:has(#dark:checked) .contact .container form {
+    background-color: #171717;
+   }
+   :root:has(#dark:checked) .header-content h2 {
+    color: #fff;
+   }
+   :root:has(#dark:checked) body:has(#home:target) li a[href="#home"],
+   :root:has(#dark:checked) body:has(#chefs:target) li a[href="#chefs"],
+   :root:has(#dark:checked) body:has(#gallery:target) li a[href="#gallery"],
+   :root:has(#dark:checked) body:has(#contact:target) li a[href="#contact"] {
+    border-color: #c17e1f;
+    color: #fff;
+   }

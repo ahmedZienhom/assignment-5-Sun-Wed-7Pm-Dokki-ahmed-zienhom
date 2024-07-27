@@ -1,0 +1,90 @@
+@media screen and (min-width: 1024px) {
+    nav .nav-links {
+        position: relative;
+        transform: translate(0%);
+        flex-direction: row;
+        height: auto;
+    }
+    nav .close-open {
+        display: none;
+    }
+    header .container{
+        flex-direction: row-reverse;
+    }
+    header .container > * {
+        width: 40%;
+    }
+    section.chefs .container .chefs-data {
+        flex-direction: row;
+    }
+    section.chefs .container .chefs-data > div {
+        width: 40%;
+    }
+    .header-content .links-group {
+        flex-direction: row;
+    }
+    .header-content .links-group .book-a-table{
+        border-top-left-radius: 0 0;
+    }
+    header .container .header-content {
+        text-align: left;
+    }
+    footer .container {
+        display: grid;
+        grid-template-areas: 
+        "about contact"
+        "sub-box sub-box"
+        "links links"
+        ;
+    }
+    footer .container .about {
+        grid-area: about;
+    }
+    footer .container .contact {
+        grid-area: contact;
+    }
+    footer .container .sub-box {
+        grid-area: sub-box;
+    }
+    footer .container .links {
+        grid-area: links;
+    }
+    footer .contact ul li i, footer .container .about i{
+        font-size: 25px;
+    }
+    footer .container  .sub-box .sub-group {
+        flex-direction: row;
+    }
+    footer .container .sub-box .sub-group input {
+        width: 75%;
+    }
+    footer .container  .sub-box .sub-group button {
+        width: 25%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    section.chefs .container .chefs-data > div {
+        width: 30%;
+    }
+    footer .container {
+        display: grid;
+        grid-template-areas: 
+        "about sub-box contact"
+        "about links ."
+        ". links ."
+        ;
+    }
+    footer .container .about {
+        grid-area: about;
+    }
+    footer .container .contact {
+        grid-area: contact;
+    }
+    footer .container .sub-box {
+        grid-area: sub-box;
+    }
+    footer .container .links {
+        grid-area: links;
+    }
+}
